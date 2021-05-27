@@ -8,9 +8,9 @@
   * [License](#license)
 
   ## Description
+
     The project goal is to create a workout tracker using a Mongo database with a Mongoose schema and handle routes with Express for given files in public folder.
-    When the user loads the page, the user should be given the option to create a new workout or continue with the last workout.
-    The workout tracker will allow users to
+    When the user loads the page, the user should be given the option to create a new workout or continue with the last workout. The workout tracker will allow users to:
     Add exercises to a previous workout plan.
     Add new exercises to a new workout plan.
     View the combined weight of multiple exercises on the stats page.
