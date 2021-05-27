@@ -7,7 +7,15 @@ const db = require("../models");
 //Route for GET "/api/workouts/"
 router.get("/", async (req, res) => {
   try {
-    const result = await db.Workout.find({});
+    const result = await db.Workout.aggregate([
+      {
+        $addFields: {
+          totalDuration: {
+            $sum: "$exercises.duration",
+          },
+        },
+      },
+    ]);
     res.json(result);
   } catch (err) {
     res.status(500).json(err);
@@ -37,7 +45,7 @@ router.put("/:id", async ({ params, body }, res) => {
     //Add the new workout
     totalExercises = [...savedExercises, body];
     res.json(totalExercises);
-    
+
     //Update the database
     await db.Workout.findByIdAndUpdate(params.id, {
       exercises: totalExercises,
@@ -50,7 +58,15 @@ router.put("/:id", async ({ params, body }, res) => {
 //Route for GET "/api/workouts/range"
 router.get("/range", async (req, res) => {
   try {
-    const result = await db.Workout.find({});
+    const result = await db.Workout.aggregate([
+      {
+        $addFields: {
+          totalDuration: {
+            $sum: "$exercises.duration",
+          },
+        },
+      },
+    ]).limit(7);
     res.json(result);
   } catch (err) {
     res.status(500).json(err);
