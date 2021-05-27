@@ -7,6 +7,11 @@
   * [User Story](#userstory)
   * [License](#license)
 
+
+<img width="1361" alt="Screen Shot 2021-05-26 at 11 20 24 PM" src="https://user-images.githubusercontent.com/76567790/119762397-a1382c00-be7b-11eb-853a-8c5bdedd6365.png">
+<img width="809" alt="Screen Shot 2021-05-26 at 11 37 30 PM" src="https://user-images.githubusercontent.com/76567790/119762408-a85f3a00-be7b-11eb-8dff-2c1277ce762a.png">
+<img width="808" alt="Screen Shot 2021-05-26 at 11 37 55 PM" src="https://user-images.githubusercontent.com/76567790/119762424-b0b77500-be7b-11eb-9639-c02506ec76b9.png">
+
   ## Description
   The project goal is to create a workout tracker using a Mongo database with a Mongoose schema and handle routes with Express for given files in public folder.
 When the user loads the page, the user should be given the option to create a new workout or continue with the last workout. The workout tracker will allow users to:
