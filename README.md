@@ -8,7 +8,7 @@
   * [License](#license)
 
   ## Description
-  
+  You can see the deploy app here: https://damp-retreat-78804.herokuapp.com/
   ## Installation
   Click the GitHub link provided above to the APP REPO. Click on the green button that says Clone or Download and Choose how you would like to download: using the SSH/HTTPS keys or download the zip file. If using SSH/HTTPS Key: You will copy the link shown and type git clone paste URL here. If using Download ZIP: Click on Download Zip. Locate the file and double-click it to unzip the file. Locate the unzipped folder and open it
 
